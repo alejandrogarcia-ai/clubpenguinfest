@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda | Club Penguin Fest 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Luckiest+Guy&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <img src="img/logo.png" alt="logo">
+            <span class="nav-titulo">Tienda</span>
+            <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><img src="img/botonhambur.png" alt="botonhamburg.png"></button>
+            <nav id="menu">
+                <button class="nav-cerrar" type="button" aria-label="Cerrar menú"><img src="img/botonhambur.png" alt="botonhamburg.png"></button>
+                <a href="index.html">Inicio</a>
+                <a href="actividades.html">Actividades</a>
+                <a href="informacion.html">Información</a>
+                <a href="tienda.html">Tienda</a>
+                <a href="productos.html" class="solo-movil">Productos</a>
+                <a href="pedidos.html">Mis pedidos</a>
+            </nav>
+        </div>
+        <div class="nav-overlay"></div>
+    </header>
+
+    <section class="info-hero tienda-hero">
+        <img class="bg" src="img/tiendinwas.jpg" alt="tiendinwas">
+        <img class="pin" src="img/tiendast.png" alt="tiendast">
+        <div class="info-hero-content">
+            <h1>Mercancía oficial<br>para tu iglú</h1>
+            <img class="guia" src="img/rookie.png" alt="rookie">
+        </div>
+    </section>
+
+    <div class="tienda-linea"></div>
+
+    <section id="productos">
+        <div class="wrap">
+            <div class="carrusel-tienda" data-inicio="1">
+                <button class="flecha flecha-prev" type="button" aria-label="Producto anterior"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                <div class="pista">
+                    <article class="producto-slide" data-pos="izq">
+                        <div class="producto-img">
+                            <img loading="lazy" src="imgmerch/merchseis.jpg" alt="merchseis">
+                        </div>
+                        <div class="producto-info">
+                            <h3>-Pinwas en pijama-</h3>
+                            <p class="precio">30.000 ARS$</p>
+                            <a href="productos.html#merchseis" class="cta">Más información</a>
+                        </div>
+                    </article>
+                    <article class="producto-slide" data-pos="centro">
+                        <div class="producto-img">
+                            <img loading="lazy" src="imgmerch/merchuno.jpg" alt="merchuno">
+                        </div>
+                        <div class="producto-info">
+                            <h3>-Sticker Premium-</h3>
+                            <p class="precio">5.000 ARS$</p>
+                            <a href="productos.html#merchuno" class="cta">Más información</a>
+                        </div>
+                    </article>
+                    <article class="producto-slide" data-pos="der">
+                        <div class="producto-img">
+                            <img loading="lazy" src="imgmerch/merchsiete.jpg" alt="merchsiete">
+                        </div>
+                        <div class="producto-info">
+                            <h3>-Un rejunte de bribones-</h3>
+                            <p class="precio">300.000 ARS$</p>
+                            <a href="productos.html#merchsiete" class="cta">Más información</a>
+                        </div>
+                    </article>
+                    <article class="producto-slide" data-pos="oculto">
+                        <div class="producto-img">
+                            <img loading="lazy" src="imgmerch/merchtres.jpg" alt="merchtres">
+                        </div>
+                        <div class="producto-info">
+                            <h3>-El pingüino pizzero-</h3>
+                            <p class="precio">30.000 ARS$</p>
+                            <a href="productos.html#merchtres" class="cta">Más información</a>
+                        </div>
+                    </article>
+                </div>
+                <button class="flecha flecha-next" type="button" aria-label="Producto siguiente"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            </div>
+
+            <div class="carrusel-tienda" data-inicio="1">
+                <button class="flecha flecha-prev" type="button" aria-label="Producto anterior"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                <div class="pista">
+                    <article class="producto-slide" data-pos="izq">
+                        <div class="producto-img">
+                            <img loading="lazy" src="imgmerch/merchocho.jpg" alt="merchocho">
+                        </div>
+                        <div class="producto-info">
+                            <h3>-Remera “18 and over”-</h3>
+                            <p class="precio">20.000 ARS$</p>
+                            <a href="productos.html#merchocho" class="cta">Más información</a>
+                        </div>
+                    </article>
+                    <article class="producto-slide" data-pos="centro">
+                        <div class="producto-img">
+                            <img loading="lazy" src="imgmerch/merchcinco.jpg" alt="merchcinco">
+                        </div>
+                        <div class="producto-info">
+                            <h3>-Buzo gamer girl-</h3>
+                            <p class="precio">40.000 ARS$</p>
+                            <a href="productos.html#merchcinco" class="cta">Más información</a>
+                        </div>
+                    </article>
+                    <article class="producto-slide" data-pos="der">
+                        <div class="producto-img">
+                            <img loading="lazy" src="imgmerch/merchdos.jpg" alt="merchdos">
+                        </div>
+                        <div class="producto-info">
+                            <h3>-Pin-ffles-</h3>
+                            <p class="precio">20.000 ARS$</p>
+                            <a href="productos.html#merchdos" class="cta">Más información</a>
+                        </div>
+                    </article>
+                    <article class="producto-slide" data-pos="oculto">
+                        <div class="producto-img">
+                            <img loading="lazy" src="imgmerch/merchnueve.jpg" alt="merchnueve">
+                        </div>
+                        <div class="producto-info">
+                            <h3>-Llaveros pingüinezcos-</h3>
+                            <p class="precio">25.000 ARS$</p>
+                            <a href="productos.html#merchnueve" class="cta">Más información</a>
+                        </div>
+                    </article>
+                </div>
+                <button class="flecha flecha-next" type="button" aria-label="Producto siguiente"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p><strong>EVENTO CLUB PENGUIN — EDICIÓN LA PLATA</strong><br>7 al 14 de Diciembre | Estación de Trenes (1 y 44)
+        </p>
+        <p>¿Dudas de último minuto?<br>Escribinos a: clubpinwas@gmail.com | Instagram:
+            @lospinwas</p>
+        <p>© 2026 Evento Ficticio / Fan Event inspirado en Club
+            Penguin.<br>Todas las marcas y personajes pertenecen a sus respectivos dueños.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.carrusel-tienda').forEach(function (carrusel) {
+            var slides = carrusel.querySelectorAll('.producto-slide');
+            var total = slides.length;
+            var actual = Number(carrusel.dataset.inicio) || 0;
+
+            function mostrar() {
+                slides.forEach(function (slide, i) {
+                    var d = (i - actual + total) % total;
+                    var pos = d === 0 ? 'centro' : d === 1 ? 'der' : d === total - 1 ? 'izq' : 'oculto';
+                    slide.dataset.pos = pos;
+                    slide.inert = pos !== 'centro';
+                });
+            }
+
+            carrusel.querySelector('.flecha-prev').addEventListener('click', function () {
+                actual = (actual - 1 + total) % total;
+                mostrar();
+            });
+
+            carrusel.querySelector('.flecha-next').addEventListener('click', function () {
+                actual = (actual + 1) % total;
+                mostrar();
+            });
+
+            mostrar();
+        });
+    </script>
+
+    <script src="menu.js"></script>
+
+</body>
+
+</html>

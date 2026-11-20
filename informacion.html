@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información | Club Penguin Fest 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Luckiest+Guy&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <img src="img/logo.png" alt="logo">
+            <span class="nav-titulo">Información</span>
+            <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><img src="img/botonhambur.png" alt="botonhamburg.png"></button>
+            <nav id="menu">
+                <button class="nav-cerrar" type="button" aria-label="Cerrar menú"><img src="img/botonhambur.png" alt="botonhamburg.png"></button>
+                <a href="index.html">Inicio</a>
+                <a href="actividades.html">Actividades</a>
+                <a href="informacion.html">Información</a>
+                <a href="tienda.html">Tienda</a>
+                <a href="productos.html" class="solo-movil">Productos</a>
+                <a href="pedidos.html">Mis pedidos</a>
+            </nav>
+        </div>
+        <div class="nav-overlay"></div>
+    </header>
+
+    <section class="info-hero">
+        <img class="bg" src="img/infor.jpg" alt="infor">
+        <img class="pin" src="img/guiast.png" alt="guiast">
+        <div class="info-hero-content">
+            <h1>Tu guía para la isla</h1>
+            <img class="guia" src="img/pinwiguia.png" alt="pinwiguia">
+        </div>
+    </section>
+
+    <div class="tienda-linea"></div>
+
+    <section id="ubicacion">
+        <div class="wrap">
+            <div class="section-title-wrap"><span class="section-title">Rumbo a la Isla</span></div>
+            <div class="ubi-box">
+                <img loading="lazy" class="mapa-icon" src="img/mapa.png" alt="mapa">
+                <img loading="lazy" class="rock" src="img/rock.jpg" alt="rock">
+                <div class="ubi-info">
+                    <iframe class="mapfr" loading="lazy"
+                        src="https://www.google.com/maps?q=Estaci%C3%B3n%20de%20Trenes%20La%20Plata&output=embed"></iframe>
+                    <h3>Estación La Plata</h3>
+                    <p>El evento se realizará en la Estación La Plata, un punto histórico y de fácil acceso en el centro
+                        de la ciudad. Te esperamos para vivir una experiencia especial de Club Penguin junto a otros
+                        fans.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq">
+        <div class="wrap">
+            <div class="section-title-wrap"><span class="section-title">Código de Agente: FAQ</span></div>
+            <div class="faq-wrap">
+                <div>
+                    <details>
+                        <summary>¿En qué parte de la Estación están?</summary>
+                        <p class="a">Vas a ver nuestro punto de encuentro apenas bajes del tren o entres al hall
+                            principal. Imposible perderte.</p>
+                    </details>
+                    <details>
+                        <summary>¿Puedo ir disfrazado o con accesorios?</summary>
+                        <p class="a">¡Totalmente recomendado! Traé tu disfraz completo para sacarte fotos.</p>
+                    </details>
+                    <details>
+                        <summary>¿El evento se suspende si llueve?</summary>
+                        <p class="a">¡Jamás! Estamos en un sector techado de la estación, bien protegidos de cualquier
+                            tormenta de nieve (o lluvia platense).</p>
+                    </details>
+                </div>
+                <img loading="lazy" src="img/faq.png" alt="faq">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p><strong>EVENTO CLUB PENGUIN — EDICIÓN LA PLATA</strong><br>7 al 14 de Diciembre | Estación de Trenes (1 y 44)
+        </p>
+        <p>¿Dudas de último minuto?<br>Escribinos a: clubpinwas@gmail.com | Instagram:
+            @lospinwas</p>
+        <p>© 2026 Evento Ficticio / Fan Event inspirado en Club
+            Penguin.<br>Todas las marcas y personajes pertenecen a sus respectivos dueños.</p>
+    </footer>
+
+    <script src="menu.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Penguin Fest 2026 | Reserva tu entrada gratis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Luckiest+Guy&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <img src="img/logo.png" alt="logo">
+            <span class="nav-titulo">Inicio</span>
+            <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><img src="img/botonhambur.png" alt="botonhamburg.png"></button>
+            <nav id="menu">
+                <button class="nav-cerrar" type="button" aria-label="Cerrar menú"><img src="img/botonhambur.png" alt="botonhamburg.png"></button>
+                <a href="index.html">Inicio</a>
+                <a href="actividades.html">Actividades</a>
+                <a href="informacion.html">Información</a>
+                <a href="tienda.html">Tienda</a>
+                <a href="productos.html" class="solo-movil">Productos</a>
+                <a href="pedidos.html">Mis pedidos</a>
+            </nav>
+        </div>
+        <div class="nav-overlay"></div>
+    </header>
+
+    <section class="hero">
+        <img class="bg" src="img/general.jpg" alt="general">
+        <img class="medal" src="img/fies.png" alt="fies">
+        <div class="hero-content">
+            <img class="hero-title-img" src="img/clubpfest.png" alt="clubpfest">
+            <div class="pill">7 al 14 de Diciembre | La Plata</div><br>
+            <div class="cta-row">
+                <a href="#registro" class="cta">Reserva gratis</a>
+                <img class="ticket-float" src="img/ticket.png" alt="ticket">
+            </div>
+        </div>
+    </section>
+
+    <div class="h1bar">
+        <h1>¡Los pingüinos vuelven a la fiesta!</h1>
+    </div>
+
+    <section id="registro">
+        <div class="wrap registro">
+            <img loading="lazy" src="img/saludo.png" alt="saludo">
+            <div class="reg-card">
+                <h2>Registro</h2>
+                <form id="regForm">
+                    <input type="text" id="nombre" placeholder="Nombre y Apellido" aria-label="Nombre y Apellido" required>
+                    <input type="email" id="email" placeholder="Email" aria-label="Email" required>
+                    <textarea id="mensaje" placeholder="Mensaje" aria-label="Mensaje"></textarea>
+                    <button type="submit">Confirmar reserva</button>
+                </form>
+                <p class="reg-msg" id="regMsg"></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="seccion-que-es">
+        <div class="wrap">
+            <div class="que-es">
+                <img loading="lazy" class="banner-img" src="img/banner.jpg" alt="banner">
+                <div>
+                    <h2>¿Que es el Club Penguin Fest?</h2>
+                    <p>Es un evento presencial inspirado en el universo de Club Penguin. Un encuentro para recorrer
+                        espacios inspirados en la isla, participar en juegos y actividades, conocer a otros fans y
+                        disfrutar de una celebración llena de música, personajes y sorpresas.</p>
+                </div>
+                <img loading="lazy" src="img/fiestero.png" alt="fiestero">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p><strong>EVENTO CLUB PENGUIN — EDICIÓN LA PLATA</strong><br>7 al 14 de Diciembre | Estación de Trenes (1 y 44)
+        </p>
+        <p>¿Dudas de último minuto?<br>Escribinos a: clubpinwas@gmail.com | Instagram:
+            @lospinwas</p>
+        <p>© 2026 Evento Ficticio / Fan Event inspirado en Club
+            Penguin.<br>Todas las marcas y personajes pertenecen a sus respectivos dueños.</p>
+    </footer>
+
+    <script src="menu.js"></script>
+
+</body>
+
+</html>

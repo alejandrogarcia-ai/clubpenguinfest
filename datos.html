@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos de compra | Club Penguin Fest 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Luckiest+Guy&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="header-compra">
+        <img src="img/logo.png" alt="logo">
+    </header>
+
+    <section id="datos">
+        <div class="wrap">
+            <div class="compra-titulo">
+                <h1>Tesoro en camino</h1>
+                <p>Realiza tu compra</p>
+            </div>
+
+            <form class="compra-form">
+                <select class="tarjeta-tipo" aria-label="Tipo de tarjeta" required>
+                    <option value="visa">VISA</option>
+                    <option value="mastercard">MASTERCARD</option>
+                </select>
+                <div class="fila-doble fila-sep">
+                    <input type="text" inputmode="numeric" autocomplete="cc-number" maxlength="19"
+                        placeholder="Número de tarjeta:" aria-label="Número de tarjeta" required>
+                    <div class="fecha-cvv">
+                        <select aria-label="Mes de vencimiento" autocomplete="cc-exp-month" required>
+                            <option value="" disabled selected hidden>MM</option>
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>04</option>
+                            <option>05</option>
+                            <option>06</option>
+                            <option>07</option>
+                            <option>08</option>
+                            <option>09</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                        </select>
+                        <select aria-label="Año de vencimiento" autocomplete="cc-exp-year" required>
+                            <option value="" disabled selected hidden>AA</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>
+                            <option>30</option>
+                            <option>31</option>
+                            <option>32</option>
+                            <option>33</option>
+                            <option>34</option>
+                            <option>35</option>
+                        </select>
+                        <input type="text" inputmode="numeric" autocomplete="cc-csc" maxlength="4" placeholder="CVV"
+                            aria-label="Código de seguridad (CVV)" required>
+                    </div>
+                </div>
+                <div class="fila-doble fila-sep">
+                    <input type="text" placeholder="Nombre:" aria-label="Nombre" required>
+                    <input type="text" placeholder="Apellido:" aria-label="Apellido" required>
+                </div>
+                <input type="text" placeholder="Localidad:" aria-label="Localidad" required>
+                <div class="fila-doble fila-sep">
+                    <input type="text" placeholder="Dirección de facturación:" aria-label="Dirección de facturación" required>
+                    <input type="text" placeholder="Código postal:" aria-label="Código postal" required>
+                </div>
+                <input type="tel" class="sin-margen" placeholder="Teléfono:" aria-label="Teléfono">
+                <button type="submit" class="compra-btn">Comprar</button>
+            </form>
+
+            <a href="productos.html" class="volver">Volver</a>
+        </div>
+    </section>
+
+    <div class="modal-compra" id="modalCompra" role="dialog" aria-modal="true" aria-labelledby="compraExitosa" hidden>
+        <div class="modal-card">
+            <h2 id="compraExitosa">¡Compra exitosa!</h2>
+            <img src="img/cafe.png" alt="cafe">
+        </div>
+        <a href="index.html" class="compra-btn">Volver al inicio</a>
+    </div>
+
+    <footer>
+        <p><strong>EVENTO CLUB PENGUIN — EDICIÓN LA PLATA</strong><br>7 al 14 de Diciembre | Estación de Trenes (1 y 44)
+        </p>
+        <p>¿Dudas de último minuto?<br>Escribinos a: clubpinwas@gmail.com | Instagram:
+            @lospinwas</p>
+        <p>© 2026 Evento Ficticio / Fan Event inspirado en Club
+            Penguin.<br>Todas las marcas y personajes pertenecen a sus respectivos dueños.</p>
+    </footer>
+
+    <script>
+        var form = document.querySelector('.compra-form');
+        var modal = document.getElementById('modalCompra');
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            modal.hidden = false;
+            modal.querySelector('.compra-btn').focus();
+        });
+    </script>
+
+</body>
+
+</html>
